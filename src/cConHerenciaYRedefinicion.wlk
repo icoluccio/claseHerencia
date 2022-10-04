@@ -15,9 +15,9 @@ class Persona {
 	var property trabajo = diariero
 
 	method hablar(mensaje) {
-      console.println(mensaje)
+		console.println(mensaje)
 	}
-	
+
 	method trabajar() {
 		horasVividas += 8
 		dinero += trabajo.sueldo()
@@ -49,6 +49,9 @@ class Spiderman inherits Persona {
 }
 
 class PoliciaCorrupto inherits Persona {
+
+	method pelear() {
+	}
 
 	// Acá redefinimos trabajar
 	override method trabajar() {
